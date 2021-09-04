@@ -5,6 +5,18 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaBibliotecarioManas", "SistemaBibliotecarioManas\SistemaBibliotecarioManas.csproj", "{A5A45090-CAD0-42AD-A7FA-3B07D34AC26F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Web", "01. Web", "{C80C964D-5CC6-452E-8ACA-BE47C1FDA0D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Application", "02. Application", "{F52F6065-620B-4402-AB49-5D8E3BAC3F7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Domain", "03. Domain", "{461FFF1E-701F-402C-86C2-74BBB699EC21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Infra", "04. Infra", "{B365AE27-9E7A-44E0-A597-C36FEBBE7615}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Test", "05. Test", "{A6A331EF-66C7-457A-8D97-D05626268579}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaBiblitecarioManas.Entities", "BaseEntity\SistemaBiblitecarioManas.Entities.csproj", "{0CCF026A-06FC-4A9A-B235-A805F94FA2D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +27,17 @@ Global
 		{A5A45090-CAD0-42AD-A7FA-3B07D34AC26F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5A45090-CAD0-42AD-A7FA-3B07D34AC26F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5A45090-CAD0-42AD-A7FA-3B07D34AC26F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CCF026A-06FC-4A9A-B235-A805F94FA2D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CCF026A-06FC-4A9A-B235-A805F94FA2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CCF026A-06FC-4A9A-B235-A805F94FA2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CCF026A-06FC-4A9A-B235-A805F94FA2D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5A45090-CAD0-42AD-A7FA-3B07D34AC26F} = {C80C964D-5CC6-452E-8ACA-BE47C1FDA0D7}
+		{0CCF026A-06FC-4A9A-B235-A805F94FA2D1} = {461FFF1E-701F-402C-86C2-74BBB699EC21}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E8857B07-B5F4-45CA-AFC1-4EA328A8C226}
