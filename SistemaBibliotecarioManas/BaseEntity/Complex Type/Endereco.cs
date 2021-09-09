@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace SistemaBiblitecarioManas.Entities.Complex_Type
 {
     public class Endereco

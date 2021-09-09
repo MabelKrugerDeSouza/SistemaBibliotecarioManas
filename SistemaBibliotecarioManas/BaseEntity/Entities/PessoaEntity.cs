@@ -5,7 +5,7 @@ namespace SistemaBiblitecarioManas.Entities.Entities
 {
     public class PessoaEntity : BaseEntity
     {
-        public string NomeCliente { get; set; }
+        public string NomePessoa { get; set; }
         public string Email { get; set; }
         public string CPF { get; set; }
         public DateTime DataNascimento { get; set; }
