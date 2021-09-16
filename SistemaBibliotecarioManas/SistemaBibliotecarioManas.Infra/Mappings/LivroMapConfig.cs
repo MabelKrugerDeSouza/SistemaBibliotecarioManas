@@ -1,4 +1,6 @@
-﻿using SistemaBiblitecarioManas.Entities.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using SistemaBiblitecarioManas.Entities.Entities;
 
 namespace SistemaBibliotecarioManas.Infra.Mappings
 {
@@ -9,7 +11,7 @@ namespace SistemaBibliotecarioManas.Infra.Mappings
             builder.ToTable("LIVROS");
 
             builder.Property(l => l.NomeLivro).HasColumnName("NomeLivro").HasMaxLength(50).IsRequired();
-            builder.Property(l => l.NOmeAutor).HasColumnName("NomeAutor").HasMacLenght(40).IsRequired();
+            builder.Property(l => l.NomeAutor).HasColumnName("NomeAutor").HasMaxLength(40).IsRequired();
             builder.Property(l => l.GeneroDoLivro).HasColumnName("Genero").IsRequired();
         }
     }

@@ -1,4 +1,6 @@
-﻿using SistemaBiblitecarioManas.Entities.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using SistemaBiblitecarioManas.Entities.Entities;
 
 namespace SistemaBibliotecarioManas.Infra.Mappings
 {
@@ -8,9 +10,9 @@ namespace SistemaBibliotecarioManas.Infra.Mappings
         {
             builder.ToTable("PESSOAS");
 
-            builder.Property(p => p.NomePessoa).HasColumnName("NomePessoa").HasMaxLength(50).HasRequired();
-            builder.Property(p => p.Email).HasColumnNane("Email").HasMaxLenght(70).HasRequired();
-            builder.Property(p => p.CPF).HasColumnName("CPF").HasFixedLenght(18).IsRequired();
+            builder.Property(p => p.NomePessoa).HasColumnName("NomePessoa").HasMaxLength(50).IsRequired();
+            builder.Property(p => p.Email).HasColumnName("Email").HasMaxLength(70).IsRequired();
+            builder.Property(p => p.CPF).HasColumnName("CPF").IsFixedLength().HasMaxLength(11).IsRequired();
             builder.Property(p => p.DataNascimento).HasColumnName("Data_Nascimento").IsRequired();
             builder.Property(p => p.Telefone).HasColumnName("Telefone").IsFixedLength().HasMaxLength(11).IsRequired();
             builder.Property(p => p.TipoPessoa).HasColumnName("TipoPessoa").IsRequired();
