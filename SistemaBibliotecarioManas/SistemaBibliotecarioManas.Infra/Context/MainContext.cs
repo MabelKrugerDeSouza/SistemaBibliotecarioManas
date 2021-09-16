@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using SistemaBiblitecarioManas.Entities.Entities;
+using System;
+using System.Linq;
 
 namespace SistemaBibliotecarioManas.Infra
 {
@@ -11,7 +14,6 @@ namespace SistemaBibliotecarioManas.Infra
 
         public MainContext()
         {
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

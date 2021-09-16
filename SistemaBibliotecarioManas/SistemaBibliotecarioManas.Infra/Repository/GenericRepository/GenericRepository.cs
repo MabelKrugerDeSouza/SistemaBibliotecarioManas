@@ -1,14 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SistemaBiblitecarioManas.Entities.Entities;
+using SistemaBiblitecarioManas.Entities.Interface;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace SistemaBibliotecarioManas.Infra.Repository.GenericRepository
 {
-    public class GenericRepository<TEntity> : IGenericRepository(TEntity) where TEntity : BaseEntity
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseEntity
     {
         private readonly MainContext _dbContext;
         protected readonly DbSet<TEntity> _dbSet;
 
-       public GenericRepository(MainContext dbContext)
+        public GenericRepository(MainContext dbContext)
         {
             _dbContext = dbContext;
             _dbSet = dbContext.Set<TEntity>();
@@ -16,8 +20,8 @@ namespace SistemaBibliotecarioManas.Infra.Repository.GenericRepository
         public async Task<TEntity> GetById(int id)
         {
             return await _dbContext.Set<TEntity>()
-                .AsNoTracking()
-                .FirstOrDefaultAsync(e => e.Id == id && !e.Deletado);
+                 .AsNoTracking()
+                 .FirstOrDefaultAsync(e => e.Id == id && !e.Deletado);
         }
         public async Task Create(TEntity entity)
         {
@@ -41,5 +45,4 @@ namespace SistemaBibliotecarioManas.Infra.Repository.GenericRepository
             return await Query().ToListAsync();
         }
     }
-}
 }
