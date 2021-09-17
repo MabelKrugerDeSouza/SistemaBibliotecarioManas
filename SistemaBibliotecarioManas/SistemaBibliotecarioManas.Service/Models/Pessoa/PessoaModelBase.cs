@@ -4,8 +4,9 @@ using System;
 
 namespace SistemaBibliotecarioManas.Application.Models.Pessoa
 {
-    public class PessoaModelBase
+    public abstract class PessoaModelBase
     {
+        public int Id { get; set; }
         public string NomePessoa { get; set; }
         public string Email { get; set; }
         public string CPF { get; set; }

@@ -5,7 +5,6 @@ namespace SistemaBibliotecarioManas.Application.Models.Pessoa
 {
     public class PessoaResponseModel : PessoaModelBase
     {
-        public int Id { get; set; }
         public PessoaResponseModel(PessoaEntity pessoa)
         {
             Id = pessoa.Id;
