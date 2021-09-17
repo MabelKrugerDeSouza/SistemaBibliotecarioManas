@@ -1,5 +1,5 @@
-﻿using SistemaBiblitecarioManas.Entities.Entities;
-using System;
+﻿using SistemaBibliotecarioManas.Application.Models.Pessoa;
+using SistemaBiblitecarioManas.Entities.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

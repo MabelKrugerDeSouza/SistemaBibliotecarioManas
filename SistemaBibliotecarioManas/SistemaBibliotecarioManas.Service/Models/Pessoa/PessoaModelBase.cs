@@ -13,5 +13,10 @@ namespace SistemaBibliotecarioManas.Application.Models.Pessoa
         public string Telefone { get; set; }
         public Endereco Endereco { get; set; }
         public TipoPessoa TipoPessoa { get; set; }
+
+        public PessoaModelBase()
+        {
+            Endereco = new Endereco();
+        }
     }
 }
