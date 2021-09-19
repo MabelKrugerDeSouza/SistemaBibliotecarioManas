@@ -10,9 +10,13 @@ namespace SistemaBibliotecarioManas.Infra.Mappings
         {
             builder.ToTable("LIVROS");
 
-            builder.Property(l => l.NomeLivro).HasColumnName("NomeLivro").HasMaxLength(50).IsRequired();
-            builder.Property(l => l.NomeAutor).HasColumnName("NomeAutor").HasMaxLength(40).IsRequired();
+            builder.Property(l => l.NomeLivro).HasColumnName("NomeLivro").HasMaxLength(30).IsRequired();
+            builder.Property(l => l.NomeAutor).HasColumnName("NomeAutor").HasMaxLength(30).IsRequired();
             builder.Property(l => l.GeneroDoLivro).HasColumnName("Genero").IsRequired();
+            builder.Property(l => l.Editora).HasColumnName("Editora").HasMaxLength(30).IsRequired();
+            builder.Property(l => l.Paginas).HasColumnName("Paginas").IsRequired();
+            builder.Property(l => l.Idioma).HasColumnName("Idioma").HasMaxLength(20).IsRequired();
+            builder.Property(l => l.DataPublicacao).HasColumnName("DataPublicacao").IsRequired();
         }
     }
 }

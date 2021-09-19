@@ -10,7 +10,10 @@ namespace SistemaBibliotecarioManas.Application.Models.Livro
             NomeAutor = livro.NomeAutor;
             NomeLivro = livro.NomeLivro;
             GeneroDoLivro = livro.GeneroDoLivro;
-
+            Editora = livro.Editora;
+            Paginas = livro.Paginas;
+            Idioma = livro.Idioma;
+            DataPublicacao = livro.DataPublicacao;
         }
     }
 }
