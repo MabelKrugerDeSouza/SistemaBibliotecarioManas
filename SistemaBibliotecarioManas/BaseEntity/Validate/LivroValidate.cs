@@ -1,7 +1,5 @@
 ﻿using FluentValidation;
 using SistemaBiblitecarioManas.Entities.Entities;
-using SistemaBiblitecarioManas.Entities.Enum;
-using System.Data;
 
 namespace SistemaBiblitecarioManas.Entities.Validate
 {
