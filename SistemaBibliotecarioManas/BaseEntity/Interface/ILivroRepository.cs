@@ -5,6 +5,6 @@ namespace SistemaBiblitecarioManas.Entities.Interface
 {
     public interface ILivroRepository : IGenericRepository<LivroEntity>
     {
-        Task<bool> VerificarSeExisteLivroComMesmoId(int id);
+        Task<bool> VerificarSeExisteLivroComMesmoId(string nomeLivro, int id);
     }
 }
