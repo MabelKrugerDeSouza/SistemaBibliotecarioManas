@@ -1,5 +1,4 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using SistemaBibliotecarioManas.Infra.Repository.GenericRepository;
 using SistemaBiblitecarioManas.Entities.Entities;
 using SistemaBiblitecarioManas.Entities.Interface;
