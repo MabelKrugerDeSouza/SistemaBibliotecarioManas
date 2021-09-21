@@ -1,5 +1,6 @@
 ﻿using SistemaBibliotecarioManas.Application.Models.Pessoa;
 using SistemaBibliotecarioManas.Service;
+using SistemaBiblitecarioManas.Entities.Complex_Type;
 using SistemaBiblitecarioManas.Entities.Entities;
 using SistemaBiblitecarioManas.Entities.Interface;
 using System;
@@ -33,22 +34,61 @@ namespace SistemaBibliotecarioManas.Application.Service.Pessoa
 
         public async Task<PessoaEntity> Delete(int id)
         {
-            throw new NotImplementedException();
+            var pessoa = await _repositorio.GetById(id);
+            if (pessoa == null)
+            {
+                throw new ArgumentException("Livro inexistente");
+            }
+            pessoa.Delete();
+            await _repositorio.Delete(pessoa);
+            return pessoa;
         }
 
         public async Task<List<PessoaResponseModel>> GetAll()
         {
-            throw new NotImplementedException();
+            var pessoaRepositorio = await _repositorio.GetAll();
+            var pessoaResponse = new List<PessoaResponseModel>();
+
+            foreach (var item in pessoaRepositorio)
+            {
+                var pessoas = new PessoaResponseModel(item);
+                pessoaResponse.Add(pessoas);
+            }
+            return pessoaResponse;
         }
 
         public async Task<PessoaResponseModel> GetById(int id)
         {
-            throw new NotImplementedException();
+            var pessoa = await _repositorio.GetById(id);
+            if (pessoa == null )
+            {
+                throw new ArgumentException("Id inexistente.");
+            }
+
+            var pessoaResponseModel = new PessoaResponseModel(pessoa);
+            return pessoaResponseModel;
         }
 
-        public async Task<PessoaEntity> Update(int id, PessoaRequestModel request)
+        public async Task<PessoaEntity> Update(string nomePessoa, string email, string cpf, DateTime dataNascimento, string telefone, Endereco endereco, int id)
         {
-            throw new NotImplementedException();
+            var pessoa = await _repositorio.GetById(id);
+            if (pessoa == null)
+            {
+                throw new ArgumentException("Id invalido.");
+            }
+            var pessoaUpdate = new PessoaEntity();
+                
+                
+            pessoa.Update(nomePessoa,email,cpf,dataNascimento,telefone, endereco);
+            pessoa.Validate();
+
+            var verificandoCnpj = await _repositorio.PessoaJaExisteComEsseCpf(pessoa.CPF, pessoa.Id);
+            if (verificandoCnpj)
+            {
+                throw new ArgumentException("Fornecedor não poderá ser cadastrado.");
+            }
+            await _repositorio.Update(pessoa);
+            return pessoa;
         }
     }
 }
