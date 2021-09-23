@@ -11,11 +11,10 @@ namespace SistemaBibliotecarioManas.Infra.Mappings
             builder.ToTable("PESSOAS");
 
             builder.Property(p => p.NomePessoa).HasColumnName("NomePessoa").HasMaxLength(50).IsRequired();
-            builder.Property(p => p.Email).HasColumnName("Email").HasMaxLength(70).IsRequired();
+            builder.Property(p => p.Email).HasColumnName("Email").HasMaxLength(60).IsRequired();
             builder.Property(p => p.CPF).HasColumnName("CPF").IsFixedLength().HasMaxLength(11).IsRequired();
             builder.Property(p => p.DataNascimento).HasColumnName("Data_Nascimento").IsRequired();
             builder.Property(p => p.Telefone).HasColumnName("Telefone").IsFixedLength().HasMaxLength(11).IsRequired();
-            builder.Property(p => p.TipoPessoa).HasColumnName("TipoPessoa").IsRequired();
 
             builder.OwnsOne(p => p.Endereco, endereco =>
             {
