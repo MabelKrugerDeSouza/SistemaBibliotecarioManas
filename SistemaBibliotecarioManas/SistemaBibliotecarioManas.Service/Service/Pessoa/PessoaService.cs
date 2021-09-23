@@ -76,9 +76,7 @@ namespace SistemaBibliotecarioManas.Application.Service.Pessoa
             {
                 throw new ArgumentException("Id invalido.");
             }
-            var pessoaUpdate = new PessoaEntity();
-                
-                
+       
             pessoa.Update(nomePessoa,email,cpf,dataNascimento,telefone, endereco);
             pessoa.Validate();
 
