@@ -13,7 +13,6 @@ namespace SistemaBibliotecarioManas.Application.Models.Pessoa
             CPF = pessoa.CPF;
             DataNascimento = pessoa.DataNascimento;
             Telefone = pessoa.Telefone;
-            TipoPessoa = pessoa.TipoPessoa;
 
             Endereco = new EnderecoModelTeste
             {

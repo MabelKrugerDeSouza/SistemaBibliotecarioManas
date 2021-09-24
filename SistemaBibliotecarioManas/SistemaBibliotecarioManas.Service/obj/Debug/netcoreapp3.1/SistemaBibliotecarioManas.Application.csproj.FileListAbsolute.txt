@@ -1,0 +1,12 @@
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\obj\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.csprojAssemblyReference.cache
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\obj\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.AssemblyInfoInputs.cache
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\obj\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.AssemblyInfo.cs
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\obj\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.csproj.CoreCompileInputs.cache
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\bin\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.deps.json
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\bin\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.dll
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\bin\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.pdb
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\bin\Debug\netcoreapp3.1\SistemaBiblitecarioManas.Entities.dll
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\bin\Debug\netcoreapp3.1\SistemaBiblitecarioManas.Entities.pdb
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\obj\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.csproj.CopyComplete
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\obj\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.dll
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas.Service\obj\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.pdb

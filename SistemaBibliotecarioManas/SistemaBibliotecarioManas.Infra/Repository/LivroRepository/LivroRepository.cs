@@ -14,9 +14,9 @@ namespace SistemaBibliotecarioManas.Infra.Repository.LivroRepository
         {
         }
 
-        public async Task<bool> VerificarSeExisteLivroComMesmoId(int id)
+        public async Task<bool> VerificarSeExisteLivroComMesmoId(string nomeLivro, int id)
         {
-            return await _dbSet.AnyAsync(x => x.Id != id && x.Deletado != true);
+            return await _dbSet.AnyAsync(x => x.Id != id && x.NomeLivro == nomeLivro && x.Deletado != true);
         }
     }
 }

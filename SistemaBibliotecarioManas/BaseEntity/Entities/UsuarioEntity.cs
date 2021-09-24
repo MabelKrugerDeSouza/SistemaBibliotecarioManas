@@ -7,8 +7,5 @@ namespace SistemaBiblitecarioManas.Entities.Entities
         public string Senha { get; set; }
         public string Email { get; set; }
 
-        public void Login()
-        {
-        }
     }
 }
