@@ -1,5 +1,4 @@
-﻿using SistemaBiblitecarioManas.Entities;
-using SistemaBiblitecarioManas.Entities.Complex_Type;
+﻿using SistemaBiblitecarioManas.Entities.Complex_Type;
 using System;
 
 namespace SistemaBibliotecarioManas.Application.Models.Pessoa
@@ -13,7 +12,6 @@ namespace SistemaBibliotecarioManas.Application.Models.Pessoa
         public DateTime DataNascimento { get; set; }
         public string Telefone { get; set; }
         public Endereco Endereco { get; set; }
-        public TipoPessoa TipoPessoa { get; set; }
 
         public PessoaModelBase()
         {
