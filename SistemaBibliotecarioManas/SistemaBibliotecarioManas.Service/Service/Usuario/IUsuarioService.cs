@@ -10,7 +10,7 @@ namespace SistemaBibliotecarioManas.Application.Service.Usuario
         Task<int> Create(UsuarioRequestModel model);
         Task<UsuarioEntity> Login(string email, string senha);
         Task<UsuarioEntity> Delete(int id);
-        Task<UsuarioEntity> Update(string nomeUsuario, string senha, string email);
+        Task<UsuarioEntity> Update(string nomeUsuario, string senha, string email, int id);
         Task<UsuarioResponseModel> GetById(int id);
         Task<List<UsuarioResponseModel>> GetAll();
     }

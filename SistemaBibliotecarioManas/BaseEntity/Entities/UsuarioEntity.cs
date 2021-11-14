@@ -16,6 +16,7 @@ namespace SistemaBiblitecarioManas.Entities.Entities
             NomeUsuario = nomeUsuario;
             Senha = senha;
             Email = email;
+
         }
 
         public void Delete()

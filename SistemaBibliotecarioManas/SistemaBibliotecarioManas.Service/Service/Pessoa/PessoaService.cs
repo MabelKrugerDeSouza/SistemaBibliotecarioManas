@@ -21,9 +21,9 @@ namespace SistemaBibliotecarioManas.Application.Service.Pessoa
         public async Task<int> Create(PessoaRequestModel request)
         {
             var pessoa = new PessoaEntity();
-            var livroJaExiste = await _repositorio.PessoaJaExiste(pessoa.CPF);
+            var pessoaJaExiste = await _repositorio.PessoaJaExiste(pessoa.CPF);
 
-            if (livroJaExiste)
+            if (pessoaJaExiste)
             {
                 throw new ArgumentException("CPF informado já existe.");
             }
