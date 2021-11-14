@@ -69,7 +69,7 @@ namespace SistemaBibliotecarioManas.Application.Service.Pessoa
             return pessoaResponseModel;
         }
 
-        public async Task<PessoaEntity> Update(string nomePessoa, string email, string cpf, DateTime dataNascimento, string telefone, Endereco endereco, int id)
+        public async Task<PessoaEntity> Update(int id, PessoaRequestModel requestModel)
         {
             var pessoa = await _repositorio.GetById(id);
             if (pessoa == null)
@@ -77,7 +77,7 @@ namespace SistemaBibliotecarioManas.Application.Service.Pessoa
                 throw new ArgumentException("Id invalido.");
             }
        
-            pessoa.Update(nomePessoa,email,cpf,dataNascimento,telefone, endereco);
+            pessoa.Update(requestModel.NomePessoa,requestModel.Email,requestModel.CPF,requestModel.DataNascimento,requestModel.Telefone, requestModel.Endereco);
             pessoa.Validate();
 
             var verificandoCnpj = await _repositorio.PessoaJaExisteComEsseCpf(pessoa.CPF, pessoa.Id);
