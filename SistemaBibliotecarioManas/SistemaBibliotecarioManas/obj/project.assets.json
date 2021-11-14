@@ -3004,6 +3004,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "SistemaBibliotecarioManas.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "SistemaBiblitecarioManas.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SistemaBibliotecarioManas.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaBibliotecarioManas.Application.dll": {}
+        }
+      },
       "SistemaBibliotecarioManas.Infra/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -9506,6 +9519,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "SistemaBibliotecarioManas.Application/1.0.0": {
+      "type": "project",
+      "path": "../SistemaBibliotecarioManas.Service/SistemaBibliotecarioManas.Application.csproj",
+      "msbuildProject": "../SistemaBibliotecarioManas.Service/SistemaBibliotecarioManas.Application.csproj"
+    },
     "SistemaBibliotecarioManas.Infra/1.0.0": {
       "type": "project",
       "path": "../SistemaBibliotecarioManas.Infra/SistemaBibliotecarioManas.Infra.csproj",
@@ -9520,6 +9538,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore.Design >= 5.0.10",
+      "SistemaBibliotecarioManas.Application >= 1.0.0",
       "SistemaBibliotecarioManas.Infra >= 1.0.0"
     ]
   },
@@ -9551,6 +9570,9 @@
           "projectReferences": {
             "C:\\Users\\mabel\\SistemaBibliotecarioManas.git\\SistemaBibliotecarioManas\\SistemaBibliotecarioManas.Infra\\SistemaBibliotecarioManas.Infra.csproj": {
               "projectPath": "C:\\Users\\mabel\\SistemaBibliotecarioManas.git\\SistemaBibliotecarioManas\\SistemaBibliotecarioManas.Infra\\SistemaBibliotecarioManas.Infra.csproj"
+            },
+            "C:\\Users\\mabel\\SistemaBibliotecarioManas.git\\SistemaBibliotecarioManas\\SistemaBibliotecarioManas.Service\\SistemaBibliotecarioManas.Application.csproj": {
+              "projectPath": "C:\\Users\\mabel\\SistemaBibliotecarioManas.git\\SistemaBibliotecarioManas\\SistemaBibliotecarioManas.Service\\SistemaBibliotecarioManas.Application.csproj"
             }
           }
         }

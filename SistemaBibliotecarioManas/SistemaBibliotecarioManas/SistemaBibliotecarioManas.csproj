@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -17,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SistemaBibliotecarioManas.Infra\SistemaBibliotecarioManas.Infra.csproj" />
+    <ProjectReference Include="..\SistemaBibliotecarioManas.Service\SistemaBibliotecarioManas.Application.csproj" />
   </ItemGroup>
 
 

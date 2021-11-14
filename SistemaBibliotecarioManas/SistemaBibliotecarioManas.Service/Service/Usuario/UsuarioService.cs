@@ -72,7 +72,7 @@ namespace SistemaBibliotecarioManas.Application.Service.Usuario
             throw new NotImplementedException();
         }
 
-        public async Task<UsuarioEntity> Update(string nomeUsuario, string senha, string email, int id)
+        public async Task<UsuarioEntity> Update(int id, UsuarioRequestModel request)
         {
             var encontrarUsuario = await _repository.GetById(id);
             if(encontrarUsuario == null)
@@ -80,7 +80,7 @@ namespace SistemaBibliotecarioManas.Application.Service.Usuario
                 throw new ArgumentException("Usuário não encontrado.");
             }
 
-            encontrarUsuario.Update(nomeUsuario, senha, email);
+            encontrarUsuario.Update(request.NomeUsuario, request.Senha, request.Email);
             encontrarUsuario.Validate();
 
             var verificandoUsuario = await _repository.PessoaJaExisteComEsseEmail(encontrarUsuario.Email, encontrarUsuario.Id);
