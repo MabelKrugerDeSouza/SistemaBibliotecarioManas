@@ -67,9 +67,9 @@ namespace SistemaBibliotecarioManas.Application.Service.Usuario
             return usuarioResponseModel;
         }
 
-        public Task<UsuarioEntity> Login(string email, string senha)
+        public async Task<bool> Login(string email, string senha)
         {
-            throw new NotImplementedException();
+            return await _repository.Login(email, senha);
         }
 
         public async Task<UsuarioEntity> Update(int id, UsuarioRequestModel request)

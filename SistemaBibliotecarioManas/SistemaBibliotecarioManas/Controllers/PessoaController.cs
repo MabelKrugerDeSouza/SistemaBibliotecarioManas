@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SistemaBibliotecarioManas.Controllers
 {
     [ApiController]
-    [Route("api/[Controller]")]
+    [Route("api/[controller]")]
     public class PessoaController : Controller
     {
         private readonly IPessoaService _service;

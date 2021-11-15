@@ -13,13 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Domain", "03. Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Infra", "04. Infra", "{B365AE27-9E7A-44E0-A597-C36FEBBE7615}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Test", "05. Test", "{A6A331EF-66C7-457A-8D97-D05626268579}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaBiblitecarioManas.Entities", "BaseEntity\SistemaBiblitecarioManas.Entities.csproj", "{0CCF026A-06FC-4A9A-B235-A805F94FA2D1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaBibliotecarioManas.Infra", "SistemaBibliotecarioManas.Infra\SistemaBibliotecarioManas.Infra.csproj", "{95F2B1C8-330E-4A53-BC2E-10F01694BA72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaBibliotecarioManas.Application", "SistemaBibliotecarioManas.Service\SistemaBibliotecarioManas.Application.csproj", "{5A625036-6B33-48AA-9A92-B62D5E9A412A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaBibliotecarioManas.Application", "SistemaBibliotecarioManas.Service\SistemaBibliotecarioManas.Application.csproj", "{5A625036-6B33-48AA-9A92-B62D5E9A412A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

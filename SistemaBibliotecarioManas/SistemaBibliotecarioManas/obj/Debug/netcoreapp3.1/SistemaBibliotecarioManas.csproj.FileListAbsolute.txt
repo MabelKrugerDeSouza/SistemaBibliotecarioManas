@@ -143,3 +143,5 @@ C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBi
 C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas\obj\Debug\netcoreapp3.1\SistemaBibliotecarioManas.csproj.CoreCompileInputs.cache
 C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas\obj\Debug\netcoreapp3.1\SistemaBibliotecarioManas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas\bin\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.dll
+C:\Users\mabel\SistemaBibliotecarioManas.git\SistemaBibliotecarioManas\SistemaBibliotecarioManas\bin\Debug\netcoreapp3.1\SistemaBibliotecarioManas.Application.pdb

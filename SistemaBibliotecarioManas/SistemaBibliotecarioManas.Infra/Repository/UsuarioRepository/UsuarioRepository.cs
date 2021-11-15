@@ -16,9 +16,26 @@ namespace SistemaBibliotecarioManas.Infra.Repository.UsuarioRepository
         {
             return await _dbSet.AnyAsync(u => u.Email == email && u.Deletado != true);
         }
-        public async Task<bool> SenhaOuEmailInvalido(string senha, string email)
+
+        public async Task<bool> PessoaJaExisteComEsseEmail(string email, int id)
         {
-            return await _dbSet.AnyAsync(u => u.Senha == senha && u.Email == email != true);
+            return await _dbSet.AnyAsync(u => u.Email == email && u.Id != id);
+        }
+
+        public async Task<bool> Login(string email, string senha)
+        {
+            var usuario = await _dbSet.FirstOrDefaultAsync(u => u.Email == email);
+            if (usuario == null)
+            {
+                return false;
+            }
+
+            if (usuario.Senha != senha)
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 

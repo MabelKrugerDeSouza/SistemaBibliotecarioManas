@@ -8,7 +8,7 @@ namespace SistemaBibliotecarioManas.Application.Service.Usuario
     public interface IUsuarioService
     {
         Task<int> Create(UsuarioRequestModel model);
-        Task<UsuarioEntity> Login(string email, string senha);
+        Task<bool> Login(string email, string senha);
         Task<UsuarioEntity> Delete(int id);
         Task<UsuarioEntity> Update(int id, UsuarioRequestModel request);
         Task<UsuarioResponseModel> GetById(int id);

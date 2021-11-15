@@ -126,5 +126,25 @@ namespace SistemaBibliotecarioManas.Controllers
             }
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Login([FromBody] string email, string senha)
+        {
+            try
+            {
+                return Ok(await _service.Login(email, senha));
+            }
+            catch(ErrosException ex)
+            {
+                return NotFound(ex.Errors);
+            }
+            catch(DbUpdateException ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(400, ex.Message);
+            }
+        }
     }
 }
